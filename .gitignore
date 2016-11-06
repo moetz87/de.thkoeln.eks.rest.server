@@ -1,0 +1,22 @@
+# IntelliJ
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Netbeans
+nbactions.xml
+nb-configuration.xml
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+# Maven
+target/
