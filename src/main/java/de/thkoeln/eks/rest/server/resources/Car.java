@@ -2,8 +2,8 @@ package de.thkoeln.eks.rest.server.resources;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlIDREF;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 
 @XmlRootElement(name = "car")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -11,7 +11,7 @@ public class Car {
 
     private String brand;
     private String model;
-    @XmlTransient
+    @XmlIDREF
     private Driver driver;
 
     public Car(String brand, String model, Driver driver) {

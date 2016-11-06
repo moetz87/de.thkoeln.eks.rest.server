@@ -34,6 +34,7 @@ public class DriverService {
         if (!driver.isPresent()) {
             return null;
         }
+        car.setDriver(driver.get());
         return driver.get().getCars().add(car);
     }
 

@@ -8,6 +8,7 @@ import java.util.List;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Driver {
 
+    @XmlID
     private String name;
     @XmlElementWrapper(name = "cars")
     @XmlElement(name = "car")
